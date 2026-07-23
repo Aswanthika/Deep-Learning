@@ -45,6 +45,57 @@ The second exercise compares Mean Squared Error (MSE) and Binary Cross Entropy (
 - Visualize and analyze training loss curves.
 
 ---
+# Exercise 3: Backpropagation from Scratch
+
+## Objective
+
+To understand how gradients are propagated through a neural network using the **backpropagation algorithm**.
+
+In this exercise, a simple neural network is implemented mathematically and verified using Python. The network consists of:
+
+- 2 input neurons
+- 2 hidden neurons
+- 1 output neuron
+- Sigmoid activation function
+- Mean Squared Error (MSE) loss
+- Gradient descent for weight updates
+
+The exercise demonstrates the complete process of:
+
+1. Forward propagation
+2. Hidden layer activation calculation
+3. Output prediction
+4. Loss calculation
+5. Backpropagation
+6. Gradient calculation
+7. Weight updates
+8. Python verification
+
+---
+
+# Network Architecture
+
+The network architecture is:
+
+```text
+        Input Layer       Hidden Layer       Output Layer
+
+          x1 = 1  ───────►  h1  ───────────►
+                         ╱                      │
+                        ╱                       ▼
+                       ╱                     y_hat
+                      ╱                        │
+          x2 = 0  ───────►  h2  ───────────►  │
+                                               │
+                                               ▼
+                                           Target y = 1
+Input Layer    : 2 neurons
+Hidden Layer   : 2 neurons
+Output Layer   : 1 neuron
+Activation     : Sigmoid
+Loss Function  : MSE
+Optimizer      : Gradient Descent
+Learning Rate  : 0.1
 
 # Technologies Used
 
